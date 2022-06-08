@@ -1,6 +1,7 @@
 # aks-test
 
 ```
+alias kb="kubectl"
 kb create -f .\my-first-pod.yaml
 kb get pod
 kb describe pod my-pod
@@ -18,4 +19,4 @@ kb run -i --tty alpine --image=alpine --restart=Never -- sh
 ```
 
 ## Reference
-[Kubernetes 30天學習筆記系列 第 5 篇] https://ithelp.ithome.com.tw/articles/10193232
+[Kubernetes 30天學習筆記系列 第 5 篇](https://ithelp.ithome.com.tw/articles/10193232)

@@ -1,0 +1,12 @@
+--- 
+apiVersion: v1
+kind: Pod
+metadata: 
+  labels: 
+    app: nodejsapp
+    type: front-end
+  name: nodejsapp-pod
+spec: 
+  containers: 
+    - image: "bharathirajatut/erp:1.0"
+      name: nodejsapp-erp

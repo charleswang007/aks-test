@@ -91,7 +91,7 @@ Kubernetes Cluster 外但在同一個 Node 上的其他服務，可以透過這�
 Kubernetes 在每一個 Pod 創建時，都會在該 Pod 的 /etc/resolve.conf 檔案中，自動加入 kube-dns service 的 domain name 與相對應的 IP 位址。因此 其他 Pods 可以透過名稱為 kube-dns 的 Service 物件，找到正在運行的 kube-dns
 ![kube-dns](kube-dns.png)
 
-## Lab 8 - 在 Kubernetes 中實現負載平衡: Ingress Controller
+## Lab 8: 在 Kubernetes 中實現負載平衡 - Ingress Controller
 若是使用 Ingress ，我們只需開放一個對外的 port number，Ingress 可以在設定檔中設置不同的路徑，決定要將使用者的請求傳送到哪個 Service 物件
 
 ![no-ingress](no-ingress.png)
@@ -112,4 +112,4 @@ Kubernetes 在每一個 Pod 創建時，都會在該 Pod 的 /etc/resolve.conf �
 
 7. [Kubernetes 30 天學習筆記系列 第 17 篇](https://ithelp.ithome.com.tw/articles/10195786)
 
-8. [Kubernetes 30 天學習筆記系列 第 19 篇] (https://ithelp.ithome.com.tw/articles/10196261)
+8. [Kubernetes 30 天學習筆記系列 第 19 篇](https://ithelp.ithome.com.tw/articles/10196261)

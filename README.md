@@ -60,7 +60,7 @@ Controller Manager 是 Kubernetes 中所有 Controllers 的核心管理者。Con
 
 每個 Node 都有屬於它自己的 iptables，iptables 是 Linux 上的防火牆 (firewall)，不只限制哪些連線可以連進來，也會管理網路連線，決定收到的 request 要交給哪個 pod。
 
-由於每個Pod中有自己的網路。所以同一個 Pod 中 的containers 之間可以透過 <localhost:port_num> 互相溝通。而這樣無需透過外網的性質，讓我們可以將性質相近的服務放在同一個Pod裡，好比一個後端 API service，與一個後端認證service，可以放在同一個 pod 裡互相溝通。
+由於每個 Pod 中有自己的網路。所以同一個 Pod 中 的containers 之間可以透過 <localhost:port_num> 互相溝通。而這樣無需透過外網的性質，讓我們可以將性質相近的服務放在同一個Pod裡，好比一個後端 API service，與一個後端認證service，可以放在同一個 pod 裡互相溝通。
 
 ### kubelet
 kubelet相當於 node agent，用於管理該 Node 上的所有 pods以及與 master node 即時溝通。
